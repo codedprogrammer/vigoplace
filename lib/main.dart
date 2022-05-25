@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vigoplace/login.dart';
+import 'package:vigoplace/signup.dart';
 
 void main() {
   runApp(MyApp());
@@ -67,7 +69,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   child: Text('Login'),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => LoginPage(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: Colors.indigo,
                     padding: EdgeInsets.symmetric(vertical: 15),
@@ -85,7 +94,14 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => SignUp(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'Sign up',
                     style: TextStyle(
