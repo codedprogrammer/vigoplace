@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
@@ -73,7 +73,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     padding: EdgeInsets.symmetric(vertical: 15),
                     shape: new RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(15.0),
-                      // side: BorderSide(color: Colors.red),
                     ),
                     textStyle: TextStyle(
                       fontSize: 15,
